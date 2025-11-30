@@ -1,155 +1,126 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="output.css" rel="stylesheet" />
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-    <style>
-      html {
-        font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-      }
-    </style>
-    <title>Young | college student</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <div class="menu">
-          <div class="logo">
-            <a href="/">young</a>
-          </div>
-          <ul>
-            <li>
-              <a href="/about.html">about</a>
-            </li>
-            <li>
-              <a href="/languages.html">languages</a> 
-            </li>
-            <li>
-              <a href="/spotify.html">spotify</a> 
-            </li>
-            <li>
-              <a href="/post.html">post</a> 
-            </li>
-          </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="output.css" rel="stylesheet" />
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <style>
+    html {
+      font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    }
+  </style>
+  <title>Young | college student</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="menu">
+        <div class="logo">
+          <a href="/">young</a>
         </div>
-        <div class="social">
-          <ul>
-            <li>
-              <a href="https://github.com/iamparkj" target="_blank" class="smaller">
-                <span class="icon-github"></span>
-              </a>
-            </li>
-            <li>
-              <a href="mailto:bloomwayz@snu.ac.kr" target="_blank">
-                <span class="icon-mail_outline"></span>
-              </a>
-            </li>
-            <li>
-              <a href="#" onclick="switchTheme()" title="Switch theme?">
-                <span class="icon-invert_colors2" id="theme-switcher"></span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </header>
-      <div class="page">
-        <h1>와플에서의 한 달 기록</h1>
-        <h6>작성일: 2025. 10. 4.</h6>
-        <br>
-        <p>
-          어느덧 와플스튜디오에 발을 들인 지 한 달이 되었다.
-          첫 세미나를 들은 것이 9월 5일이었으니, 오늘은 정확히 프론트엔드 루키로서 30일째인 셈이다.
-          카페에서 와플스튜디오를 들어가 보겠답시고 자기소개서 쓰던 때가 엊그제 같은데,
-          이제는 그때의 더위도, 습기도, 방학의 여유도 없다.
-          방 안을 황망하게 날아다니는 모기만이 여름의 흔적으로 남아 있다.
-          <br><br>
-          그래서 나는 한 달 동안 무얼 하고 살았나?
-          네 번의 세미나가 있었다.
-          네 번의 세미나 동안 HTML, 자바스크립트를 거쳐 리액트와 라우팅까지를 배웠다.
-          세미나를 한 번 하면 과제가 나온다.
-          대체로 클론 코딩이다.
-          <br><br>
-          오늘은, 한 달 동안 와플스튜디오에서 나를 거쳐간 과제들을 돌아보려 한다.
-          과제를 수행하고 웹 개발에 대해 아는 것이 늘어갈수록 아쉬운 점도 늘어나니까, 그 아쉬움을 이 글에 남겨보려 한다.
-        </p>
-        <br>
-        <h2>9월 5일</h2>
-        <p>
-          첫 번째 과제는 '나를 소개하는 웹사이트 만들기'였다.
-          다만 조건이 있다.
-          HTML, CSS, 자바스크립트만을 사용할 것.
-          <br><br>
-          과제를 받고 가장 먼저 든 생각은, '웹페이지를 어떻게 디자인하지?'였다.
-          나를 소개하는 웹페이지라면, 내 이름이 걸려 있는 웹페이지라면, 뭐든 허투루 하고 싶지 않았다.
-          과제를 받은 그날부터 미친듯이 참고할 만한 것을 찾기 시작했다.
-          <br><br>
-          시간은 흘러 마감 당일이 되고, 머리는 점점 복잡해졌다.
-          나에게 주어진 시간은 열두 시간, HTML은 아직 백지 상태.
-          그렇다면, 마음에 드는 웹페이지를 하나 찾아다가 클론 코딩을 하자.
-          그런데 누구의 페이지를 클론 코딩한다? 교수님?
-          <br><br>
-          그렇게 찾은 페이지가 언어학과 모 교수님의 페이지였다.
-          지킬(Jekyll) 테마를 사용한 깃허브 페이지스 프로젝트였기에, 레이아웃을 베끼는 과정은 어렵지 않았다.
-          레이아웃은 그대로 가져오고, 안에 있는 사진과 내용은 나의 것으로 대체했다.
-          <br><br>
-          문제는 CSS였다.
-          처음에는 테일윈드 CSS을 가져와서 어떻게든 스스로 구현해보려고 했다.
-          스스로 구현하면 시간 내에 작업을 마칠 수 없다는 사실을 깨닫는 데에는 많은 시간이 걸리지 않았고,
-          결국 지킬 테마의 CSS 파일을 그대로 복사하고 붙여넣었다.
-          <br><br>
-          잘 만들어진 CSS를 넣자 허무할 정도로 빠르게 웹페이지는 예뻐졌고,
-          나의 첫 번째 과제는 그렇게 싱겁게 끝났다.
-        </p>
-        <br>
-        <h2>9월 19일</h2>
-        <p>
-          세 번째 과제는 '2048 게임 클론코딩'이었다.
-          이제는 Vite와 타입스크립트와 리액트를 사용할 수 있다.
-          그러나 막막한 건 여전했다.
-          저 수많은 타일들, 타일이 이동하고 합쳐지고 하는 로직, 그리고 애니메이션.
-          어느 세월에 이걸 다 구현한다?
-          <br><br>
-          이번에도 처음 며칠은 스스로 구현해보고 싶다는 오기로 보냈다.
-          역시 테일윈드 CSS를 가져와서, 뭔가 쓸 만한 게 없을지 클래스 이름을 이것저것 넣어본다.
-          그리고 목요일, 깨닫는다.
-          그냥 2048 게임 웹사이트에서 CSS를 가져오는 게 낫겠다!
-          그렇게 나의 웹페이지는 그저 2048 게임이 되었다.
-          <br><br>
-          이젠 속내용을 채울 차례이다.
-          사실 이 과정이 가장 큰 난관이었다.
-          나의 의도대로 리액트를 조작한다는 건 어려운 일이었다.
-          useEffect의 실행, 렌더링 순서, 의존성 배열…
-          모든 게 꼬일 대로 꼬여가는 것만 같았다.
-          종이에 계획 써보기, 구글에 검색해보기, 제미나이에 물어보기, 그러다 갈아엎기를 몇 차례 반복했고,
-          그레이스 데이를 이틀 모두 소진하고 나서야 과제를 제출할 수 있었다.
-          <br><br>
-          그럼에도 목표했던 타일 병합과 이동 애니메이션을 의도대로 구현하지 못했다.
-          CSS 차원에서 애니메이션을 해결할 수 있을 것 같은데, 무엇이 문제인지 몰라서 아직 그 문제는 방치하고 있다.
-        </p>
-        <br>
-        <h2>9월 26일</h2>
-        <p>
-          네 번째 과제는 서버와 통신해서 레시피를 보여주는 웹사이트를 만드는 것이었다.
-          비동기 처리와 HTTP 통신, 라우팅의 개념을 세미나에서 배웠으니 이제 적용해볼 차례이다.
-          <br><br>
-          이번에는 디자인 가이드라인으로 제시된 피그마가 있었고,
-          레이아웃이 아주 복잡하지 않아 (마침내!) 테일윈드 CSS를 내가 잘 조합하여 해결할 수 있었다.
-          이쯤되면 테일윈드를 쓰지못해 안달난 사람같지만… 아무튼 그렇다.
-          <br><br>
-          지난 과제(2048 클론코딩)가 어려웠어서 그런지, 이번 과제를 수행하는 데에는 아주 큰 어려움이 있지는 않았다.
-          다만 CSS와는 아직도 친하지 않아서, 레이아웃을 구성하고 각 요소를 꾸미는 일들이 아직까지는 어렵게만 느껴진다.
-          <br><br>
-          또 한 가지 아쉬운 점은 페이지네이션(pagination)이다.
-          이번에 페이지네이션을 처음 구현해봤는데, 우리가 일상적으로 접하는 웹사이트처럼 페이지 전환이 매끄럽게 되지 않는 것 같다.
-          <br><br>
-          아마 한 달 뒤에 이런 글을 다시 쓰게 될 것 같다.
-          그때의 나는 어떤 모습일까.
-          적어도 지금보다 더 성장해 있기를 기대해 본다.
-        </p>
+        <ul>
+          <li>
+            <a href="/about.html">about</a>
+          </li>
+          <li>
+            <a href="/languages.html">languages</a>
+          </li>
+          <li>
+            <a href="/spotify.html">spotify</a>
+          </li>
+          <li>
+            <a href="/post.html">post</a>
+          </li>
+        </ul>
       </div>
+      <div class="social">
+        <ul>
+          <li>
+            <a href="https://github.com/iamparkj" target="_blank" class="smaller">
+              <span class="icon-github"></span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:bloomwayz@snu.ac.kr" target="_blank">
+              <span class="icon-mail_outline"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="switchTheme()" title="Switch theme?">
+              <span class="icon-invert_colors2" id="theme-switcher"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="page">
+      <h1>스누인턴 클론코딩 기록</h1>
+      <h6>작성일: 2025. 11. 30.</h6>
+      <br>
+      <p>
+        와플스튜디오에서의 세 달을 보냈다.
+        '스누인턴'이라는 서비스를 클론코딩하는 과제를 받았고, 약 두 달 동안 이 과제를 수행했다.
+        이 과정에서 있었던 어려운 일과 이를 해결한 과정을 적어본다.
+      </p>
+      <br>
+      <h2>테일윈드 CSS의 동적 스타일링</h2>
+      <p>
+        스누인턴 클론코딩 프로젝트를 진행하는 과정에서, 스타일을 설정하기 위해 테일윈드 CSS를 사용하였다.
+        JSX 코드에 클레스 이름을 적음으로써 스타일을 설정할 수 있다.
+        이를테면 다음과 같다.
+      </p>
+      <img src="images/2.png" />
+      <p>
+        p 태그의 클래스 이름을 살펴보자.
+        text-xl, font-bold, text-[#ffffff] 세 가지의 요소가 있다.
+        각각 텍스트의 크기(XL 크기), 텍스트의 굵기(볼드체), 텍스트의 색상(흰색)을 의미한다.
+        이런 식으로 필요한 요소를 모두 조합하여 클래스 이름을 작성하면, 자동으로 스타일이 적용되는 것이다.
+      </p>
+      <br>
+      <p>
+        그런데 아래와 같은 경우 색상이 설정대로 적용되지 않는다는 사실을 깨달았다.
+      </p>
+      <img src="images/3.png" />
+      <p>
+        진리값을 저장하는 변수 foo가 있다고 하자.
+        그리고 foo의 값에 따라 다른 색상 텍스트를 담는 변수 textColour가 있다고 하자.
+        그리고 클래스 이름에 textColour를 넣으면 foo의 값에 따라 텍스트의 색상이 달라질 것 같다.
+        그러나 실제로는 그렇지 않다.
+        foo의 값이 무엇이든 관계없이 텍스트가 항상 검은색으로 나타날 것이다.
+      </p>
+      <br>
+      <h2>무엇이 문제인가?</h2>
+      <p>
+        테일윈드 CSS에서는 동적 스타일링을 지원하지 않기 때문에 이런 문제가 발생한 것이다!
+        그 이유는 바로 테일윈드가 런타임이 아닌 빌드 타임에 코드를 스캔하기 때문이다.
+        간단히 말해, 테일윈드는 브라우저에서 코드가 실행될 때 어떤 클래스가 필요한지 계산하는 것이 아니라, 파일을 저장하고 빌드할 때 텍스트 파일 전체를 읽어서 필요한 CSS만 미리 만들어 낸다.
+        <br>
+        테일윈드 컴파일러의 작동 원리는 다음과 같다.
+        우선 빌드 타임에 소스 코드를 텍스트로 읽는다.
+        그런 다음 정규식을 사용해 클래스 이름처럼 보이는 문자열을 찾는다.
+        이렇게 찾은 클래스 이름에 해당하는 CSS만을 미리 생성해 둔다.
+        <br>
+        따라서 완전한 문자열로 적혀 있지 않은 클래스는 인식하지 못하고, 최종 CSS 파일에서 제외해 버린다.
+        위에서 예로 든 코드에서는 text-[#ffffff]도, text-[#000000]도 없으니 당연히 색상 스타일링도 적용될 수 없었던 것이다.
+      </p>
+      <br>
+      <h2>어떻게 해결할 수 있는가?</h2>
+      <p>
+        완전한 문자열을 스캔한다는 원리를 이해하면, 다음과 같이 조건에 따라 다른 스타일링을 구현할 수 있다.
+      </p>
+      <img src="images/4.png" />
+      <p>
+        textColourClass 변수에 클래스 이름이 완전한 문자열로 포함되어 있으므로, 테일윈드 엔진은 소스 코드를 스캔하며 text-[#ffffff]와 text-[#000000]에 해당하는 스타일을
+        미리 생성하게 된다.
+        이렇게 생성된 스타일은 런타임에 p 태그의 텍스트에 결합되며 텍스트의 색상이 foo의 값에 따라 정상적으로 반영되는 것이다.
+      </p>
     </div>
-  </body>
-  <script src="theme.js"></script>
+  </div>
+</body>
+<script src="theme.js"></script>
+
 </html>
