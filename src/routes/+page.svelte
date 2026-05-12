@@ -43,7 +43,7 @@ function handleContainerLeave() {
         </span>
       </div>
       <div class="flex flex-wrap gap-0.5 items-center justify-center sm:justify-start">
-        <span class="body-base">Studying Linguistics & Computer Science at</span>
+        <span class="body-base text-[#79716b]">Undergraduate in Linguistics & CS @</span>
         <Button
           variant="link"
           href="https://snu.ac.kr"
@@ -95,7 +95,26 @@ function handleContainerLeave() {
 </section>
 
 <section class="w-full max-w-2xl mx-auto px-4 sm:px-0 pb-16">
-  <h2 class="section-title">Recent News</h2>
+  <h2 class="mb-4">Hi! 👋</h2>
+  <div class="body-base flex flex-col gap-3">
+    <p>
+      I am interested in every area
+      <strong class="font-semibold">where humans and computers meet</strong>.
+      My goal is to improve developer experience based on natural/programming languages and HCI.
+    </p>
+    <p>
+      Now, I am working as a research intern in
+      <a
+        href="https://knlp.snu.ac.kr"
+        class="transition-all text-primary underline-offset-4 hover:underline"
+      >SNUNLP Lab</a>.
+      I recently focus on interpretability of LLMs for code generation.
+    </p>
+  </div>
+</section>
+
+<section class="w-full max-w-2xl mx-auto px-4 sm:px-0 pb-16">
+  <h2>Recent News</h2>
   <div
     class="news-rows relative mt-3"
     onmouseleave={handleContainerLeave}
@@ -107,7 +126,7 @@ function handleContainerLeave() {
     ></div>
     {#each news as item}
       <div
-        class="relative grid grid-cols-[9rem_1fr] gap-4 px-3 py-2"
+        class="relative grid grid-cols-[7rem_1fr] gap-4 px-3 py-2"
         onmouseenter={handleRowEnter}
         role="row"
         tabindex="0"
@@ -134,11 +153,10 @@ function handleContainerLeave() {
   }
 
   .body-base {
-    color: #79716b;
     font-size: clamp(0.8125rem, 1.5vw + 0.25rem, 1rem);
     font-style: normal;
     font-weight: 400;
-    line-height: 120%;
+    line-height: 170%;
   }
 
   /* Suppress warning `css_unused_selector` */
@@ -146,7 +164,7 @@ function handleContainerLeave() {
     font-size: clamp(0.8125rem, 1.5vw + 0.25rem, 1rem);
   }
 
-  .section-title {
+  h2 {
     font-family: "Hedvig Letters Serif", serif;
     font-size: clamp(1rem, 2vw + 0.25rem, 1.25rem);
     font-weight: 600;
