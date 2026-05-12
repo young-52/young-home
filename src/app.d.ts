@@ -4,4 +4,4 @@ declare global {
 	// App type augmentations can be added here
 }
 
-export {}
+export {};

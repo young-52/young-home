@@ -1,7 +1,7 @@
 export type NewsItem = {
-	date: string
-	headline: string
-}
+	date: string;
+	headline: string;
+};
 
 export const news: NewsItem[] = [
 	{ date: '12 May 2026', headline: '🔧 Renew my website!' },
@@ -13,4 +13,4 @@ export const news: NewsItem[] = [
 		date: '17 Oct 2025',
 		headline: '✏️ Started my internship at SNU NLP Laboratory!'
 	}
-]
+];
