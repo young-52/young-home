@@ -33,7 +33,7 @@ function handleContainerLeave() {
     <img
       src={profileImg}
       alt="Junyoung Park"
-      class="rounded-full size-28 sm:size-36 md:size-40"
+      class="rounded-full size-28 sm:size-36 md:size-40 ring-2 ring-border"
     />
     <div class="flex flex-col justify-center items-center sm:items-start gap-4 sm:gap-6">
       <div class="flex flex-col gap-2 sm:gap-3 justify-center items-center sm:items-start">
