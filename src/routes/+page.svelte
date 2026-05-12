@@ -13,18 +13,18 @@ let highlightVisible = $state(false)
 
 // biome-ignore lint:noUnusedVariables
 function handleRowEnter(e: MouseEvent) {
-  const row = e.currentTarget as HTMLElement
-  const container = row.closest('.news-rows') as HTMLElement
-  const containerRect = container.getBoundingClientRect()
-  const rowRect = row.getBoundingClientRect()
-  highlightTop = rowRect.top - containerRect.top
-  highlightHeight = rowRect.height
-  highlightVisible = true
+	const row = e.currentTarget as HTMLElement
+	const container = row.closest('.news-rows') as HTMLElement
+	const containerRect = container.getBoundingClientRect()
+	const rowRect = row.getBoundingClientRect()
+	highlightTop = rowRect.top - containerRect.top
+	highlightHeight = rowRect.height
+	highlightVisible = true
 }
 
 // biome-ignore lint:noUnusedVariables
 function handleContainerLeave() {
-  highlightVisible = false
+	highlightVisible = false
 }
 </script>
 

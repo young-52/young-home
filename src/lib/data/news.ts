@@ -11,7 +11,6 @@ export const news: NewsItem[] = [
 	},
 	{
 		date: '17 Oct 2025',
-		headline:
-			'✏️ Started my internship at SNU NLP Laboratory!',
+		headline: '✏️ Started my internship at SNU NLP Laboratory!'
 	}
 ]
