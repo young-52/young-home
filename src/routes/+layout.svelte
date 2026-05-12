@@ -1,8 +1,6 @@
 <script lang="ts">
 import './layout.css'
-import favicon from '$lib/assets/favicon.svg'
 
-// biome-ignore lint: false positive
 let { children } = $props()
 </script>
 

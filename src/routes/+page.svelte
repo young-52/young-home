@@ -4,14 +4,10 @@ import profileImg from '$lib/assets/profile.jpg'
 import { Button } from '$lib/components/ui/button/index.js'
 import { news } from '$lib/data/news.js'
 
-// biome-ignore lint:noUnusedVariables
 let highlightTop = $state(0)
-// biome-ignore lint:noUnusedVariables
 let highlightHeight = $state(0)
-// biome-ignore lint:noUnusedVariables
 let highlightVisible = $state(false)
 
-// biome-ignore lint:noUnusedVariables
 function handleRowEnter(e: MouseEvent) {
 	const row = e.currentTarget as HTMLElement
 	const container = row.closest('.news-rows') as HTMLElement
@@ -22,7 +18,6 @@ function handleRowEnter(e: MouseEvent) {
 	highlightVisible = true
 }
 
-// biome-ignore lint:noUnusedVariables
 function handleContainerLeave() {
 	highlightVisible = false
 }
